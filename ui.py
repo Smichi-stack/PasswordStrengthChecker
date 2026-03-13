@@ -25,7 +25,7 @@ def run():
         bar["value"] = score_password(pwd)
         
         text = strength(pwd)
-        colors = {"Very Weak":"red","Weak":"orange","Fine":"yellow","Strong":"light green","Very Strong":"green"}
+        colors = {"very weak":"red","weak":"orange","fine":"yellow","strong":"light green","very strong":"green"}
         label.config(text=text, fg=colors.get(text, "gray"))
 
     entry.bind("<KeyRelease>", update)
