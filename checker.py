@@ -4,11 +4,11 @@ def strength(p):
     s = score_password(p)
 
     if s <= 1:
-        return "Very Weak"
+        return "very weak"
     if s == 2:
-        return "Weak"
+        return "weak"
     if s == 3:
-        return "Fine"
+        return "fine"
     if s == 4:
-        return "Strong"
-    return "Very Strong"
+        return "strong"
+    return "very strong"
