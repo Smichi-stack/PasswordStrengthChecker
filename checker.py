@@ -2,8 +2,13 @@ from utils import score_password
 
 def strength(p):
     s = score_password(p)
-    if s <= 2:
+
+    if s <= 1:
+        return "Very Weak"
+    if s == 2:
         return "Weak"
     if s == 3:
-        return "Medium"
-    return "Strong"
+        return "Fine"
+    if s == 4:
+        return "Strong"
+    return "Very Strong"
